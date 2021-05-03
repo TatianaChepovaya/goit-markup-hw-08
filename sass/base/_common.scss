@@ -1,0 +1,49 @@
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.list {
+  list-style-type: none;
+}
+.icon {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--timing-function);
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.title {
+  text-align: center;
+  font-weight: var(--primary--font-weight);
+  font-size: 36px;
+  line-height: 1.16;
+  margin-bottom: 50px;
+}
+%flex-list {
+  display: flex;
+  flex-wrap: wrap;
+}

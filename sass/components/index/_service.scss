@@ -1,0 +1,25 @@
+.service__list {
+  @extend %flex-list;
+  margin-left: -30px;
+  margin-top: -50px;
+}
+.service__item {
+  position: relative;
+  margin-left: 30px;
+  margin-top: 50px;
+  flex-basis: calc((100% - 3 * 30px) / 3);
+}
+.service__image {
+  display: block;
+}
+.service__title-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  color: var(--main-light-color);
+  text-align: center;
+  padding: 27px 0;
+  text-transform: uppercase;
+}
