@@ -7,14 +7,16 @@
   }
 }
 .features__item {
-  margin-left: 30px;
-  margin-top: 30px;
-  background-color: crimson;
-
   @media screen and (max-width: 480px) {
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   @media screen and (min-width: 768px) {
+    margin-left: 30px;
+    margin-top: 30px;
     flex-basis: calc((100% - 2 * 30px) / 2);
   }
 
@@ -33,6 +35,10 @@
   line-height: var(--primary-line-height);
   text-transform: uppercase;
   padding-bottom: 10px;
+
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
 }
 .features__text {
   color: var(--main-text-color);

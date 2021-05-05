@@ -15,7 +15,8 @@ body {
   color: #212121;
 }
 .container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -33,17 +34,23 @@ body {
   transition-timing-function: var(--timing-function);
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .title {
   text-align: center;
   font-weight: var(--primary--font-weight);
-  font-size: 36px;
-  line-height: 1.16;
-  margin-bottom: 50px;
-}
-%flex-list {
-  display: flex;
-  flex-wrap: wrap;
+  font-size: 28px;
+  line-height: 1.17;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }

@@ -1,7 +1,10 @@
 .header {
   border-bottom: 1px solid #ececec;
-  padding-top: 25px;
-  padding-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 
   &__container {
     display: flex;
@@ -35,25 +38,37 @@
   }
   &--current::after {
     position: absolute;
-    bottom: -32px;
+    bottom: -39px;
     content: '';
     display: block;
     background-color: var(--main-accent-color);
     border-radius: 2px;
     height: 4px;
     width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      bottom: -32px;
+    }
   }
 }
 
 .header__contact {
-  display: flex;
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 .contact__item {
   margin-left: 50px;
 
   &:first-child {
-    margin-left: 0;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+    }
   }
 }
 
