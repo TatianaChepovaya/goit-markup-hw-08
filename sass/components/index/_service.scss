@@ -1,5 +1,7 @@
-.service {
-  display: none;
+@media screen and (max-width: 1199px) {
+  .service {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
