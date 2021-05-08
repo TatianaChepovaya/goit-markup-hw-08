@@ -4,9 +4,7 @@
   padding-bottom: 60px;
 }
 .footer__container {
-  @media screen and (max-width: 768px) {
-    text-align: center;
-  }
+  text-align: center;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -15,6 +13,7 @@
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
+    text-align: unset;
   }
 }
 
