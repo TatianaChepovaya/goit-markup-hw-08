@@ -51,7 +51,15 @@
 }
 
 .header-socials {
-  @media screen and (max-width: 767.98px) {
+  @media (min-width: 300px) and (max-width: 479.98px) {
+    display: flex;
+    font-weight: var(--secondary--font-weight);
+    font-size: 11px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--main-accent-color);
+  }
+  @media (min-width: 480px) and (max-width: 767.98px) {
     display: flex;
     font-weight: var(--secondary--font-weight);
     font-size: 18px;
@@ -59,6 +67,7 @@
     letter-spacing: 0.02em;
     color: var(--main-accent-color);
   }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
